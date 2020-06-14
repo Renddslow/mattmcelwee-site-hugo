@@ -1,0 +1,327 @@
+.markdown p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  line-height: 1.6;
+  margin-top: 16px;
+  word-break: break-word;
+}
+
+.markdown h2 {
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 48px;
+}
+
+.markdown p a {
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.markdown p a:hover {
+  text-decoration: underline;
+}
+
+.markdown p code {
+  font-size: 0.8rem;
+  box-shadow: inset 0 0 0 1px var(--border-primary);
+}
+
+.markdown p a > code {
+  padding: 0px 4px;
+  box-shadow: inset 0 0 0 1px rgba(var(--text-link-rgb),0.16);
+  border-radius: 4px;
+  display: inline-block;
+  background: rgba(var(--text-link-rgb),0.12);
+  color: var(--text-link);
+}
+
+.markdown p a:hover > code {
+  background: rgba(var(--text-link-rgb),0.16);
+}
+
+.markdown p:first-of-type {
+  margin-top: 0;
+}
+
+.markdown p img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-top: 16px;
+  max-width: 100%;
+}
+
+.markdown figure {
+  margin: 32px -32px 0;
+  max-width: calc(100% + 64px);
+}
+
+.markdown figure img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.markdown ul,.markdown ol {
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin: 16px;
+  margin-left: 24px;
+  margin-right: 0;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  line-height: 1.7;
+}
+
+.markdown ul a,.markdown ol a {
+  color: var(--text-link);
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.markdown ul a:hover,.markdown ol a:hover {
+  text-decoration: underline;
+}
+
+.markdown ul code,.markdown ol code {
+  font-size: 0.8rem;
+  box-shadow: inset 0 0 0 1px var(--border-primary);
+}
+
+.markdown ul a > code,.markdown ol a > code {
+  padding: 0px 4px;
+  box-shadow: inset 0 0 0 1px rgba(var(--text-link-rgb),0.16);
+  border-radius: 4px;
+  display: inline-block;
+  background: rgba(var(--text-link-rgb),0.12);
+  color: var(--text-link);
+}
+
+.markdown ul a:hover > code,.markdown ol a:hover > code {
+  background: rgba(var(--text-link-rgb),0.16);
+}
+
+.markdown li {
+  line-height: 1.4;
+  margin-top: 16px;
+}
+
+.markdown strong {
+  font-weight: 700;
+}
+
+.markdown blockquote {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+  padding-left: 24px;
+  font-style: italic;
+  color: var(--text-tertiary);
+  display: block;
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.markdown blockquote a {
+  color: var(--text-link);
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.markdown blockquote a:hover {
+  text-decoration: underline;
+}
+
+.markdown blockquote code {
+  font-size: 0.8rem;
+  box-shadow: inset 0 0 0 1px var(--border-primary);
+}
+
+.markdown blockquote a > code {
+  padding: 0 4px;
+  box-shadow: inset 0 0 0 1px rgba(var(--text-link-rgb),0.16);
+  border-radius: 4px;
+  display: inline-block;
+  background: rgba(var(--text-link-rgb),0.12);
+  color: var(--text-link);
+}
+
+.markdown blockquote a:hover > code {
+  background: rgba(var(--text-link-rgb),0.16);
+}
+
+.markdown blockquote:before {
+  content: '';
+  height: 100%;
+  width: 4px;
+  border-radius: 4px;
+  background: var(--border-primary);
+  position: absolute;
+  left: 0;
+}
+
+.markdown code {
+  font-size: 0.8rem;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  padding: 0px 4px;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: none;
+  background: var(--bg-inset);
+  text-shadow: none;
+  margin-top: 0;
+}
+
+.markdown hr {
+  width: 100%;
+  height: 1px;
+  background: var(--border-primary);
+  margin: 48px 0;
+}
+
+.markdown table {
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 32px 0;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+.markdown table tbody {
+  min-width: 100%;
+  display: block;
+  overflow: auto;
+  width: 100%;
+  max-width: 100%;
+  width: -webkit-fit-content;
+}
+
+.markdown table th {
+  font-size: 1rem;
+  line-height: 1.4;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+  color: var(--text-secondary);
+  font-weight: 700 !important;
+  text-align: left;
+  padding: 8px;
+}
+
+.markdown table th a {
+  color: var(--text-link);
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.markdown table th a:hover {
+  text-decoration: underline;
+}
+
+.markdown table th code {
+  font-size: 0.8rem;
+  box-shadow: inset 0 0 0 1px var(--border-primary);
+}
+
+.markdown table th a > code {
+  padding: 0px 4px;
+  box-shadow: inset 0 0 0 1px rgba(var(--text-link-rgb),0.16);
+  border-radius: 4px;
+  display: inline-block;
+  background: rgba(var(--text-link-rgb),0.12);
+  color: var(--text-link);
+}
+
+.markdown table th a:hover > code {
+  background: rgba(var(--text-link-rgb),0.16);
+}
+
+.markdown table td {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+  color: var(--text-secondary);
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid var(--border-primary);
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.markdown table td a {
+  color: var(--text-link);
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.markdown table td a:hover {
+  text-decoration: underline;
+}
+
+.markdown table td code {
+  font-size: 0.8rem;
+  box-shadow: inset 0 0 0 1px var(--border-primary);
+}
+
+.markdown table td a > code {
+  padding: 0px 4px;
+  box-shadow: inset 0 0 0 1px rgba(var(--text-link-rgb),0.16);
+  border-radius: 4px;
+  display: inline-block;
+  background: rgba(var(--text-link-rgb),0.12);
+  color: var(--text-link);
+}
+
+.markdown table td a:hover > code {
+  background: rgba(var(--text-link-rgb),0.16);
+}
+
+.markdown table thead th {
+  vertical-align: bottom;
+  border-bottom: 1px solid var(--border-primary);
+}

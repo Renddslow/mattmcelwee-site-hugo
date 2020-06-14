@@ -1,0 +1,15 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    <div class="text page-blurb">
+        <p>{{ .Content }}</p>
+    </div>
+    <div class="list">
+        {{ range .Paginator.Pages }}
+            <div>
+                <a href="">{{ .Title }}</a>
+                <span>{{ .Params.Excerpt }}</span>
+                <p class="small"><small>Last Updated {{ .Lastmod.Format "January 2, 2006" }}</small></p>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}
