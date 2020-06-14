@@ -23,6 +23,8 @@ header.desktop {
   display: grid;
   justify-content: space-around;
   grid-template-columns: repeat(6, minmax(0, max-content));
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 .header__filter {
@@ -47,5 +49,15 @@ header span {
     width: 100%;
     padding: 12px 32px;
     border-radius: 4px;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-color: initial;
+
+    &:hover {
+      //background: var(--text-link);
+      color: var(--text-link);
+      //backdrop-filter: saturate(180%) blur(20px);
+      background: rgba(255, 149, 0, 0.06);
+    }
   }
 }
