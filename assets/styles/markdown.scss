@@ -5,9 +5,11 @@
   line-height: 1.6;
   margin-top: 16px;
   word-break: break-word;
+  color: var(--text-secondary);
 }
 
 .markdown h2 {
+  color: var(--text-primary);
   line-height: 1.2;
   letter-spacing: -0.4px;
   font-weight: 700;

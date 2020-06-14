@@ -1,0 +1,17 @@
+.list {
+  margin-top: 32px;
+  color: var(--text-secondary);
+}
+
+.list > div {
+  display: block;
+
+  .excerpt {
+    display: block;
+    margin-top: 0.25em;
+  }
+
+  .small {
+    margin: 0.5em 0 0;
+  }
+}

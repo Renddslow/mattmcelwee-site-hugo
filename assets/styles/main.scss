@@ -1,3 +1,33 @@
+:root {
+  --text-link: #0e66c7;
+  --text-link-visited: #a35bd7;
+  --bg-primary: #fcfcfc;
+  --bg-secondary: #ffffff;
+  --bg-inset: #eff0f5;
+  --border-primary: rgba(65,67,78,0.16);
+  --text-primary: #050505;
+  --text-secondary: #2f3037;
+  --text-tertiary: #525560;
+  --text-quaternary: #686B78;
+  --text-placeholder: rgba(82,85,96,0.5);
+  --text-on-primary: #fbfbfc;
+
+  @media screen and (prefers-color-scheme: dark) {
+    --text-link: #FF9500;
+    --text-link-visited: #b264ea;
+    --bg-primary: #050505;
+    --bg-secondary: #151617;
+    --bg-inset: #151617;
+    --border-primary: rgba(255,255,255,0.12);
+    --text-primary: #fbfbfc;
+    --text-secondary: #DEDFE5;
+    --text-tertiary: #a9abb6;
+    --text-quaternary: #9094A6;
+    --text-placeholder: rgba(145,148,161,0.5);
+    --text-on-primary: #050505;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +36,7 @@
 
 html {
   font-size: 18px;
+  background: var(--bg-primary);
 
   @media screen and (max-width: 968px) {
     font-size: 16px;
@@ -25,11 +56,36 @@ main {
   padding: 128px 16px;
   box-sizing: border-box;
 
+  a {
+    color: var(--text-link);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:visited {
+      color: var(--text-link-visited);
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    margin-bottom: 1em;
+    color: var(--text-primary);
+  }
+
   @media screen and (max-width: 768px) {
     max-width: 100%;
   }
 }
 
+main a {
+  font-weight: 500;
+  display: inline-block;
+}
+
 @import 'content';
 @import 'markdown';
 @import 'header';
+@import 'list';

@@ -1,7 +1,7 @@
 ---
 title: On Pharisaism
-tags: Legalism, Church Discipline, Antisemitism, Pastoral Care
 author: Matt McElwee
+excerpt: In this post I outline the problems with a particular label common in Evangelicalism.
 date: 2019-01-04T00:24:00-0500
 lastmod: 2019-01-05T00:24:00-0500
 ---
@@ -24,7 +24,7 @@ So what's the point? Is this yet another warning against legalism?
 
 No. In fact the concern I want to raise is with the term itself and a need for a new one. My deep concern is that the word Pharisee and its derivatives are ahistorical and walk a dangerous line of antisemitism. Just a few days ago there was yet another attack here in the US against a Jewish community. This time it was a crazed man with a machete in Monsey, NY. This is not at all to say that the folks who throw around the term Pharisee are looking to harm Jewish folks, in fact most folks would never even put the two thoughts together. But Pharisees didn't just disappear. In fact they were really the birth of modern Judaism, kicking off Rabbinical Judaism after the fall of Jerusalem in 70 CE.
 
-What I'm ultimately seeking to question is whether or not we can find as a community new short-hand. Something that can evoke the emotions we're seeking, taps into a deep imaginative well, and acts as a powerful corrective for potentially wayward brothers and sisters. I don't think the need for a word like Pharisee is without merit (though often over-wrought), but I wonder if we could find something new that would divorce itself from a couple hundred years of antipapal and antisemtic thought.
+What I'm ultimately seeking to question is whether or not we can find as a community new short-hand. Something that can evoke the emotions we're seeking, taps into a deep imaginative well, and acts as a powerful corrective for potentially wayward brothers and sisters. I don't think the need for a word like Pharisee is without merit (though often over-wrought), but I wonder if we could find something new that would divorce itself from a couple hundred years of anti-papal and antisemitic thought.
 
 ---
 

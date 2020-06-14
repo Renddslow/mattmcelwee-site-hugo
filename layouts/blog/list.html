@@ -6,8 +6,8 @@
     <div class="list">
         {{ range .Paginator.Pages }}
             <div>
-                <a href="">{{ .Title }}</a>
-                <span>{{ .Params.Excerpt }}</span>
+                <a href="{{ .URL }}">{{ .Title }}</a>
+                <span class="excerpt">{{ .Params.Excerpt }}</span>
                 <p class="small"><small>Last Updated {{ .Lastmod.Format "January 2, 2006" }}</small></p>
             </div>
         {{ end }}
