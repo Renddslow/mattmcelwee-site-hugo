@@ -1,0 +1,27 @@
+.bibliography {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -.1px;
+  line-height: 1.6;
+  margin-top: 16px;
+  word-break: break-word;
+  color: var(--text-secondary);
+}
+
+.citation {
+  position: relative;
+
+  &:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  a.page-link {
+    position: absolute;
+    left: -24px;
+
+    @media screen and (max-width: 640px) {
+      position: relative;
+      left: 0;
+    }
+  }
+}

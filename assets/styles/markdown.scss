@@ -327,3 +327,16 @@
   vertical-align: bottom;
   border-bottom: 1px solid var(--border-primary);
 }
+
+.markdown hr {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 64px;
+  height: 1px;
+  background: var(--text-primary);
+
+  @media screen and (max-width: 640px) {
+    width: 50%;
+  }
+}

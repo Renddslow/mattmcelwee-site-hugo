@@ -1,0 +1,39 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="markdown">
+    {{ .Content }}
+</div>
+<div class="bibliography">
+    {{ $authors := .Pages.GroupByParam "authorCitation"  }}
+    {{ range $authors }}
+        {{ range sort .Pages "Params.year" }}
+        {{ $id := .RelPermalink | replaceRE "/bibliography/(.*)/" "$1" }}
+        <div id='{{ $id }}' class="citation">
+            <a href="#{{ $id }}" class="page-link">#</a>
+            <span title="{{ .Params.Author }}">{{ .Params.AuthorCitation }}</span>
+            {{ with .Params.Year }}
+            <span>({{ . }}).</span>
+            {{ end }}
+            <span><em>{{ .Title }}.</em></span>
+            <span>{{ .Params.Publisher }}.</span>
+            {{ with .Content }}
+                <blockquote>{{ . }}</blockquote>
+            {{ end }}
+            {{ with .Params.Links }}
+            <div class="bibliography__links">
+                {{ with .Amazon }}
+                    <a href="{{ . }}">Buy from Amazon</a>
+                {{ end }}
+                {{ with .Publisher }}
+                    <a href="{{ . }}">Buy from the Publisher</a>
+                {{ end }}
+                {{ with .Audible }}
+                    <a href="{{ . }}">Buy from Audible</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}
