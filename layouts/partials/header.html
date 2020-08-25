@@ -9,4 +9,43 @@
     </div>
     <div class="header__filter"></div>
 </header>
-<header class="mobile"></header>
+
+<header class="mobile">
+    <button class="hamburger">
+        <div>
+            <span></span>
+        </div>
+        <span>Menu</span>
+    </button>
+    <div class="header__filter"></div>
+</header>
+
+<nav class="menu">
+    <button class="close">
+        <div>
+            <span></span>
+        </div>
+        <span>Close</span>
+    </button>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Formation</a></li>
+        <li><a href="/tech">Tech</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/bibliography">Bibliography</a></li>
+    </ul>
+    <div class="header__filter"></div>
+</nav>
+
+<script>
+    document.querySelector('button.hamburger').addEventListener('click', () => {
+      const menuOpen = document.querySelector('.menu').className.includes('active');
+      document.querySelector('.menu').className = menuOpen ? 'menu' : 'menu active';
+    });
+
+    document.querySelector('button.close').addEventListener('click', () => {
+      const menuOpen = document.querySelector('.menu').className.includes('active');
+      document.querySelector('.menu').className = menuOpen ? 'menu' : 'menu active';
+    });
+</script>

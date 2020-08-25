@@ -2,8 +2,8 @@
 title: On Pharisaism
 author: Matt McElwee
 excerpt: In this post I outline the problems with a particular label common in Evangelicalism.
-date: 2019-01-04T00:24:00-0500
-lastmod: 2019-01-05T00:24:00-0500
+date: 2020-01-04T00:24:00-0500
+lastmod: 2020-01-05T00:24:00-0500
 ---
 
 I've been thinking about the word Pharisee recently. If you grew up in the [Holiness](https://en.wikipedia.org/wiki/Holiness_movement) or Baptist strains of early-2000's Evangelicalism, the word Pharisee or Pharisaism packed quite a punch. In our world, it tended to refer to a self-righteous, legalistic, hard-nosed, works-based, often phony, hypocritical, pietistic individual bent on heaping judgement on other less-pious Jesus followers. It worked in two ways. On one hand, it was a somewhat helpful admonishment when your religious fervor was causing harm. On the other, it made it very easy to paint a character in your head of what the Pharisees in Jesus' time were like based on people in your circles labeled Pharisee. Based on our rendering, the first century Pharisees were much like the gossipy yet overly-spiritual church lady who cared way to much about what the pastor's kid wore to service each Sunday. Or they were that know-it-all kid in kid's church who had every verse memorized and found personal pleasure in having opportunity to correct the kid's pastor. Or worse still, the Pharisees were like Catholics.

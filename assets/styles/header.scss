@@ -11,14 +11,6 @@ header {
   box-sizing: border-box;
 }
 
-header.mobile {
-  display: none;
-}
-
-header.desktop {
-  display: block;
-}
-
 .header__grid {
   display: grid;
   justify-content: space-around;
@@ -36,6 +28,7 @@ header.desktop {
   z-index: -1;
   box-shadow: rgba(0, 0, 0, 0.06) 0 1px 0;
   backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 
 header span {
@@ -57,5 +50,97 @@ header span {
       color: var(--text-link);
       background: rgba(255, 149, 0, 0.06);
     }
+  }
+}
+
+.hamburger,
+.close {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 12px;
+  margin-left: auto;
+}
+
+.hamburger > span,
+.close > span {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.hamburger div,
+.close div {
+  position: relative;
+  height: 18px;
+  width: 16px;
+}
+
+.hamburger div span,
+.hamburger div span::before,
+.hamburger div span::after,
+.close div span::before,
+.close div span::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--text-primary);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 6.5px;
+}
+
+.close div span::before {
+  transform: rotate(45deg);
+}
+
+.close div span::after {
+  transform: rotate(-45deg);
+}
+
+.hamburger div span::before {
+  top: -6px;
+}
+
+.hamburger div span::after {
+  width: 10px;
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  padding: 4px 8px;
+  box-sizing: border-box;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu ul {
+  text-align: center;
+  list-style: none;
+  margin-top: 48px;
+}
+
+.menu li {
+  margin-bottom: 24px;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  a {
+    color: var(--text-primary);
+    text-decoration: none;
   }
 }
