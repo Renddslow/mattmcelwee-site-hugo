@@ -1,0 +1,51 @@
+footer {
+  display: grid;
+  width: 100%;
+  gap: 0;
+  max-width: 640px;
+  justify-content: center;
+  -webkit-box-pack: center;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+
+  hr {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .disclaimer {
+    width: 80%;
+    max-width: 400px;
+    margin: 12px auto 0;
+    font-style: italic;
+  }
+}
+
+.social {
+  display: grid;
+  width: max-content;
+  margin: 24px auto;
+  grid-gap: 8px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.social-link {
+  width: 30px;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+
+  &:last-child {
+    width: 20px;
+  }
+
+  svg path {
+    fill: var(--social-link);
+  }
+}

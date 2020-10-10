@@ -12,13 +12,14 @@
         {{ end }}
     </head>
     <body>
-        {{ partial "header.html" . }}
+        {{ partialCached "header.html" . }}
         <main>
             <div class="main-container">
                 {{ block "main" . }}
                 {{ end }}
             </div>
         </main>
+        {{ partialCached "footer.html" . }}
         <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
         <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
     </body>

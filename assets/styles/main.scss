@@ -11,6 +11,7 @@
   --text-quaternary: #686B78;
   --text-placeholder: rgba(82,85,96,0.5);
   --text-on-primary: #fbfbfc;
+  --social-link: #0e66c7;
 
   @media screen and (prefers-color-scheme: dark) {
     --text-link: #FF9500;
@@ -25,6 +26,7 @@
     --text-quaternary: #9094A6;
     --text-placeholder: rgba(145,148,161,0.5);
     --text-on-primary: #050505;
+    --social-link: #fbfbfc;
   }
 }
 
@@ -106,3 +108,4 @@ main a {
 @import 'header';
 @import 'list';
 @import 'bibliography';
+@import 'footer';
