@@ -14,7 +14,7 @@ header {
 .header__grid {
   display: grid;
   justify-content: space-around;
-  grid-template-columns: repeat(6, minmax(0, max-content));
+  grid-template-columns: repeat(4, minmax(0, max-content));
   max-width: 768px;
   margin: 0 auto;
 }

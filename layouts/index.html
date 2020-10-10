@@ -7,4 +7,16 @@ Matt McElwee
 <div class="text">
     {{ .Content }}
 </div>
+<div class="latest text list">
+    {{ $blogPosts := where .Site.Pages "Section" "blog" }}
+    {{ $latest := index (first 1 $blogPosts) 0 }}
+    {{ with $latest }}
+        <h2>Latest Post</h2>
+        <article>
+            <a href="{{ .URL }}">{{ .Title }}</a>
+            <span class="excerpt">{{ .Params.Excerpt }}</span>
+            <p class="small"><small>Last Updated {{ .Lastmod.Format "January 2, 2006" }}</small></p>
+        </article>
+    {{ end }}
+</div>
 {{ end }}
